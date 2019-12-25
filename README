@@ -1,0 +1,71 @@
+---------Basic Info---------
+Name: OJ Simulator
+Exec File: SIMOJ.exe
+Version: 1.4.0
+Last Modified: 2019/12/25
+
+Author:
+
+JIANG Weihao	519021911045
+	Design,Code,Logic
+LIU Yutian		519021910548
+	UI,Code,Parameter
+CAO Yichen		519021910153
+	Logic,Interact
+
+----------File Tree---------
+>ROOTFOLDER<
+│  LICENSE
+│  README
+│  README_BEFORE_COMPILING
+│
+├─dependencies
+│      DLLMGMT.SYS
+│      INT3HOVERRIDE.SYS
+│      libgcc_s_dw2-1.dll
+│      libstdc++-6.dll
+│      MEMORY.SYS
+│      wxbase313u_gcc_custom.dll
+│      wxmsw313u_core_gcc_custom.dll
+│
+├─SIMOJ 1.4.0
+│      DLLMGMT.SYS
+│      INT3HOVERRIDE.SYS
+│      libgcc_s_dw2-1.dll
+│      libstdc++-6.dll
+│      LICENSE
+│      MEMORY.SYS
+│      SIMOJ.exe-------------------------Game Entry
+│      wxbase313u_gcc_custom.dll
+│      wxmsw313u_core_gcc_custom.dll
+│
+└─source file
+    │  CODESYS.cpp
+    │  CODESYS.h
+    │  DLLMGMT.SYS
+    │  game.cbp--------------------------Codeblocks Project
+    │  game.depend
+    │  game.layout
+    │  gameApp.cpp
+    │  gameApp.h
+    │  gameMain.cpp
+    │  gameMain.h
+    │  INT3HOVERRIDE.SYS
+    │  Intro.cpp
+    │  Intro.h
+    │  LICENSE
+    │  Mail.cpp
+    │  Mail.h
+    │  MailDiag.cpp
+    │  MailDiag.h
+    │  MEMORY.SYS
+    │  resource.rc
+    │  ROUNDSYS.cpp
+    │  ROUNDSYS.h
+    │  ScoreBoard.cpp
+    │  ScoreBoard.h
+    │
+    └─wxsmith
+            gameframe.wxs
+            Intro.wxs
+            MailDiag.wxs

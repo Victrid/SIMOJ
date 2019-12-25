@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="MailDiag">
+		<title>Mail</title>
+		<centered>1</centered>
+		<size>297,400</size>
+		<focused>1</focused>
+		<id_arg>0</id_arg>
+		<style>wxSTAY_ON_TOP|wxDEFAULT_DIALOG_STYLE</style>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="Composer" member="yes">
+			<label>Label</label>
+			<pos>16,8</pos>
+			<size>264,22</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="Content" member="yes">
+			<label>Label</label>
+			<pos>16,48</pos>
+			<size>264,288</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="Status" member="yes">
+			<label>Label</label>
+			<pos>8,344</pos>
+			<size>272,16</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="OK" member="yes">
+			<label>OK</label>
+			<pos>8,368</pos>
+			<size>272,24</size>
+			<handler function="OnOKClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+			<pos>16,40</pos>
+			<size>264,1</size>
+		</object>
+	</object>
+</wxsmith>

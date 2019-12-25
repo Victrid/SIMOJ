@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+					<Add directory="include" />
+					<Add directory="../game" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31ud_core.a" />
+					<Add library="libwxbase31ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-flto" />
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+					<Add directory="include" />
+					<Add directory="../game" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-flto" />
+					<Add option="-s" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="$(#wx)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="$(#wx)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="CODESYS.cpp" />
+		<Unit filename="CODESYS.h" />
+		<Unit filename="Intro.cpp" />
+		<Unit filename="Intro.h" />
+		<Unit filename="Mail.cpp" />
+		<Unit filename="Mail.h" />
+		<Unit filename="MailDiag.cpp" />
+		<Unit filename="MailDiag.h" />
+		<Unit filename="ROUNDSYS.cpp" />
+		<Unit filename="ROUNDSYS.h" />
+		<Unit filename="ScoreBoard.cpp" />
+		<Unit filename="ScoreBoard.h" />
+		<Unit filename="game.cbp" />
+		<Unit filename="game.depend" />
+		<Unit filename="game.layout" />
+		<Unit filename="gameApp.cpp" />
+		<Unit filename="gameApp.h" />
+		<Unit filename="gameMain.cpp" />
+		<Unit filename="gameMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/Intro.wxs" />
+		<Unit filename="wxsmith/MailDiag.wxs" />
+		<Unit filename="wxsmith/gameframe.wxs" />
+		<Unit filename="wxsmith/onquit.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="gameApp.cpp" main="gameFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/gameframe.wxs" src="gameMain.cpp" hdr="gameMain.h" fwddecl="0" i18n="1" name="gameFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/MailDiag.wxs" src="MailDiag.cpp" hdr="MailDiag.h" fwddecl="0" i18n="1" name="MailDiag" language="CPP" />
+					<wxDialog wxs="wxsmith/Intro.wxs" src="Intro.cpp" hdr="Intro.h" fwddecl="0" i18n="1" name="Intro" language="CPP" />
+					<wxDialog wxs="wxsmith/onquit.wxs" src="onquit.cpp" hdr="onquit.h" fwddecl="0" i18n="1" name="onquit" language="CPP" />
+				</resources>
+			</wxsmith>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

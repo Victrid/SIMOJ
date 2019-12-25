@@ -1,0 +1,3 @@
+Dependencies are needed if you want to execute the program without IDE.
+
+You Should copy depending files (All files in the folder needed)from .\dependencies to the same place where .exe exists.
